@@ -11,8 +11,10 @@ public class BaseTest{
     public String browser;
 
     @Test
-    public void launchOnWeb() throws Exception {
+    public void launchOnWebMaster() throws Exception {
         helperForBase = new Helper();
+        System.setProperty(environment,"env");
+        System.getProperty(browser,"browser");
         environment = System.getProperty("env");
         browser = System.getProperty("browser");
         helperForBase.setupThreadWeb(browser);
