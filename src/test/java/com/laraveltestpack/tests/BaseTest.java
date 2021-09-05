@@ -18,7 +18,7 @@ public class BaseTest{
         environmentKey = "local";
         browserKey = "chrome";
         System.setProperty("env",environmentKey);
-        System.getProperty("browser",browserKey);
+        System.setProperty("browser",browserKey);
         environment = System.getProperty("env");
         browser = System.getProperty("browser");
         helperForBase.setupThreadWeb(browser);
