@@ -13,7 +13,7 @@ public class Helper {
 
     protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
     protected static RemoteWebDriver remoteDriver;
-    public static String remote_url = "http://http://192.168.1.137:30001/wd/hub";
+    public static String remote_url = "http://192.168.1.137:30001/wd/hub";
 
     public void setupThreadWeb(String browserName) throws MalformedURLException {
         if(browserName.equalsIgnoreCase("chrome"))

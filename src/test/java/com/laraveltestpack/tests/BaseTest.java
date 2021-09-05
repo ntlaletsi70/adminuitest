@@ -9,12 +9,16 @@ public class BaseTest{
     public Helper helperForBase;
     public String environment;
     public String browser;
+    public String environmentKey;
+    public String browserKey;
 
     @Test
     public void launchOnWebMaster() throws Exception {
         helperForBase = new Helper();
-        System.setProperty(environment,"env");
-        System.getProperty(browser,"browser");
+        environmentKey = "local";
+        browserKey = "chrome";
+        System.setProperty("env",environmentKey);
+        System.getProperty("browser",browserKey);
         environment = System.getProperty("env");
         browser = System.getProperty("browser");
         helperForBase.setupThreadWeb(browser);
