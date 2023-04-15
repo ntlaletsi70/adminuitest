@@ -1,1 +1,2 @@
-FROM amazoncorretto:8u192
+FROM amazoncorretto:8-alpine3.16
+
